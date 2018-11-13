@@ -1,0 +1,12 @@
+.menuButton {
+  margin-left: -12;
+  margin-right: 20;
+}
+
+.navTitle {
+  flex-grow: 1;
+}
+
+.loginButton {
+  float: right;
+}
