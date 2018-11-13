@@ -8,18 +8,44 @@ import MenuIcon from '@material-ui/icons/Menu';
 import './styles/NavBar.css'
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuClicked: false,
+      loginClicked: true,
+    }
+
+    this.handleMenuButtonClick = this.handleMenuButtonClick.bind(this);
+    this.handleLoginButtonClick = this.handleLoginButtonClick.bind(this);
+  }
+
+  handleMenuButtonClick() {
+    this.setState(prevState => ({
+      menuClicked: !prevState.menuClicked
+    }));
+  }
+
+  handleLoginButtonClick() {
+    this.setState(prevState => ({
+      loginClicked: !prevState.loginClicked
+    }));
+  }
+
   render() {
     return(
       <div>
         <AppBar position="static">
           <Toolbar>
-            <IconButton className="menuButton" color="inherit" aria-label="Menu">
+            <IconButton className="menuButton" color="inherit" aria-label="Menu" onClick={ this.handleMenuButtonClick }>
               <MenuIcon />
+              {this.state.menuClicked ? 'T' : 'F'}
             </IconButton>
             <Typography variant = "title" color = "inherit" className="navTitle">
               Run Tracker!
             </Typography>
-            <Button color="inherit" className="loginButton">Login</Button>
+            <Button color="inherit" className="loginButton" onClick={ this.handleLoginButtonClick }>
+              {this.state.loginClicked ? 'Login' : 'Sign Out'}
+            </Button>
           </Toolbar>
         </AppBar>
       </div>

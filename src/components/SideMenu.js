@@ -6,6 +6,10 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 class SideMenu extends Component {
+  constructor(props) {
+    super(props)
+  }
+  
   render() {
     return(
       <div>
