@@ -1,0 +1,8 @@
+.sideMenu {
+  position: fixed;
+  z-index: 1;
+}
+
+.buffer {
+  margin-top: 65px;
+}

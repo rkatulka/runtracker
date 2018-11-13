@@ -34,7 +34,7 @@ class NavBar extends Component {
   render() {
     return(
       <div>
-        <AppBar position="static">
+        <AppBar className="navBar">
           <Toolbar>
             <IconButton className="menuButton" color="inherit" aria-label="Menu" onClick={ this.handleMenuButtonClick }>
               <MenuIcon />

@@ -3,6 +3,16 @@
   margin-right: 20;
 }
 
+.sideMenu {
+  position: fixed;
+  z-index: 1;
+}
+
+.navBar {
+  position: fixed;
+  z-index: 2;
+}
+
 .navTitle {
   flex-grow: 1;
 }
