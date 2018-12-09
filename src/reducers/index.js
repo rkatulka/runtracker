@@ -1,6 +1,4 @@
 import { combineReducers } from 'redux';
-import drawer from './drawer';
+import * as reducers from '.';
 
-export default combineReducers({
-  drawer
-})
+export default combineReducers(reducers);
