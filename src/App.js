@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import simpleRestProvider from 'ra-data-simple-rest';
+//import simpleRestProvider from 'ra-data-simple-rest';
 
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
+/*import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-
 import NotFound from "./NotFound";
 import NavBar from './components/NavBar.js';
-/*import SideMenu from './components/SideMenu.js';
+import SideMenu from './components/SideMenu.js';
 import BasicCard from './components/BasicCard.js';
 import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
@@ -17,9 +15,10 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';*/
 import './App.css';
 
 class App extends Component {
+
   render() {
     return (
-      <NavBar />
+      <h1>Hello!</h1>
     );
   }
 
