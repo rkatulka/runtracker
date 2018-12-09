@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
 import './styles/BasicCard.css';
 
 class BasicCard extends Component {
@@ -10,10 +12,13 @@ class BasicCard extends Component {
 
   render() {
     return(
-      <Card className="card">
-        <Typography>
-          Testing Card!
-        </Typography>
+      <Card>
+        <CardContent>
+          <CardHeader title="Running activity" />
+          <Typography>
+            Testing Card!
+          </Typography>
+        </CardContent>
       </Card>
     );
   }
