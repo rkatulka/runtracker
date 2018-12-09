@@ -9,6 +9,7 @@ const initialState = {
 };
 
 /**
+ * Reducer for the side menu
  * 
  * @param {*} state - the previous state of the side menu
  * @param {*} action - an action from {@link ActionTypes} 
