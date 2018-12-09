@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import App from './App';
-import RootReducer from './reducers/index.js';
+import RootReducer from './reducers/index';
 import './index.css';
 import {
   toggleDrawer

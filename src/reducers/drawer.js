@@ -1,4 +1,4 @@
-import actionTypes from '../actions/ActionTypes';
+import { TOGGLER_DRAWER } from '../actions/ActionTypes';
 
 /**
  * Initial state for the side menu
@@ -16,7 +16,7 @@ const initialState = {
  */
 function drawer(state = initialState, action) {
   switch (action.type) {
-    case actionTypes.TOGGLE_DRAWER:
+    case TOGGLER_DRAWER:
       return Object.assign({}, state, {
         open: !state.open
       });
@@ -24,3 +24,5 @@ function drawer(state = initialState, action) {
       return state;
   }
 }
+
+export default drawer
